@@ -317,7 +317,7 @@ Mat CWarpUtils::EstimateHWeighted( PointSetd _pnt1, PointSetd _pnt2, bool _flag 
 
 Mat CWarpUtils::LoadMeanPnts3D( string _path ) {
     ifstream fin(_path.c_str());
-    if (fin != NULL) {
+    if (fin) {
         Mat landmark = Mat::zeros(Size(3, 9), CV_64FC1);
         FOR (i, 9) {
             double x, y, z; //= 0;
@@ -359,7 +359,7 @@ Mat CWarpUtils::LoadZ(string _zFile) {
     Mat Z = Mat(Size(width, height), CV_64FC1);
 
     ifstream fin(_zFile.c_str());
-    if (fin == NULL)
+    if (!fin)
         DEBUG_ERROR("cannot not load depth image (%s)", _zFile.c_str());
     else {
         FOR (h, height) {

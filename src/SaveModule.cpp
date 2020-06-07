@@ -8,7 +8,7 @@ CSaveModule::CSaveModule(string _foldPath) {
     string countFile = m_fold + "_count.txt";
     ifstream fin(countFile.c_str());
 	DEBUG_INFO("read count file (%s)", countFile.c_str());
-	if (fin != NULL) {
+	if (fin) {
 		fin >> m_nArchives; 
 		fin.close(); 
 	} else
@@ -77,7 +77,7 @@ void CSaveModule::SaveFrame(const Mat& _disp, const Mat& _ref, const Mat& _frame
 	//m_scores = _preds; 
 	m_scores.push_back(_scores[0]);
     ofstream fout(filePath.c_str());
-	if (fout == NULL) {
+	if (!fout) {
 		DEBUG_INFO("cannot save meta data (%s)", filePath.c_str());
 	} else {
 		fout << "timestamp: " << _t << endl; 

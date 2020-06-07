@@ -364,7 +364,7 @@ void CMirrorMain::ImShowRatio( string _name, const Mat& _im ) {
 
 double CMirrorMain::ReadRatio() {
     ifstream fin("ratio.txt");
-    if (fin == NULL) {
+    if (!fin) {
         SaveRatio(1.0);
         return 1.0;
     } else {
@@ -377,7 +377,7 @@ double CMirrorMain::ReadRatio() {
 
 void CMirrorMain::SaveRatio( double _r ) {
     ofstream fout("ratio.txt");
-    if (fout != NULL) {
+    if (fout) {
         fout << _r;
         fout.close();
     }

@@ -112,7 +112,7 @@ void CImageDatabase::PrintList() {
 	string imgListPath = m_dbName.substr(0, m_dbName.find_last_of("\\")) + ".list"; 
     ofstream fout(imgListPath.c_str());
 	
-	if (fout != NULL) {
+	if (fout) {
 		DEBUG_INFO("save image list to (%s)", imgListPath.c_str()); 
 		FOR (i, m_numImgs)
 			fout << m_imgNameVec[i] << endl; 

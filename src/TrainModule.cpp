@@ -21,7 +21,7 @@ CTrainModule::CTrainModule(const CParameter* _param) {
 
 	vectorString imgNames; 
     ifstream fin(m_imgList.c_str());
-	if (fin != NULL) {
+	if (fin) {
 		while (!fin.eof()) {
 			string name; 
 			fin >> name; 
@@ -81,7 +81,7 @@ void CTrainModule::Train() {
 		vectord score;
 		string scorePath = m_scoreFold + scoreFiles[n];
         ifstream fin_s(scorePath.c_str());
-		if (fin_s != NULL) {
+		if (fin_s) {
 			double s; 
 			FOR (i, m_nImgs) {
 				fin_s >> s; //score[i];

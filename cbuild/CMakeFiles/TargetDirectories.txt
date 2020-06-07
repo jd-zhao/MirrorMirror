@@ -1,0 +1,9 @@
+/mnt/c/Users/jdz39/OneDrive/Documents/Yale_Summer_2020/MirrorMirror/cbuild/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/jdz39/OneDrive/Documents/Yale_Summer_2020/MirrorMirror/cbuild/CMakeFiles/MirrorMirror.dir
+/mnt/c/Users/jdz39/OneDrive/Documents/Yale_Summer_2020/MirrorMirror/cbuild/CMakeFiles/edit_cache.dir
+/mnt/c/Users/jdz39/OneDrive/Documents/Yale_Summer_2020/MirrorMirror/cbuild/svm/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/jdz39/OneDrive/Documents/Yale_Summer_2020/MirrorMirror/cbuild/svm/CMakeFiles/edit_cache.dir
+/mnt/c/Users/jdz39/OneDrive/Documents/Yale_Summer_2020/MirrorMirror/cbuild/clm/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/jdz39/OneDrive/Documents/Yale_Summer_2020/MirrorMirror/cbuild/clm/CMakeFiles/edit_cache.dir
+/mnt/c/Users/jdz39/OneDrive/Documents/Yale_Summer_2020/MirrorMirror/cbuild/src/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/jdz39/OneDrive/Documents/Yale_Summer_2020/MirrorMirror/cbuild/src/CMakeFiles/edit_cache.dir

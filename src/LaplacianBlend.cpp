@@ -1,6 +1,7 @@
 #include "common.h"
 #include "LaplacianBlend.h"
 
+
 CLaplacianBlend::CLaplacianBlend(const Mat& _im1, const Mat& _im2, const Mat& _mask) {
     m_im1 = _im1;
     m_im2 = _im2;
